@@ -12,15 +12,31 @@
             32679 -> 6 */
             Console.WriteLine("давай число");
             string A = Console.ReadLine();
-
-            if (A.Length < 3)
+            // проверка на отрицательность
+            if (A[0]== '-')
+            // если отрицательность
             {
+                if (A.Length < 4)
+                {
                 Console.WriteLine("третьего символа нема(((");
+                }
+                else 
+                {
+                Console.WriteLine($"третья цифра числа {A} - {A[3]}");
+                }
             }
-            else 
+            // если положительность
+            else
             {
+                if (A.Length < 3)
+                {
+                Console.WriteLine("третьего символа нема(((");
+                }
+                else 
+                {
                 Console.WriteLine($"третья цифра числа {A} - {A[2]}");
-            }
+                }
+            }    
         }
     }
 }
