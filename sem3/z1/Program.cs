@@ -14,8 +14,8 @@ namespace HelloWorld
             string str = Console.ReadLine();
 
             // проверка на пятизначность, если нужна
-            //if (str.Length == 5) 
-            //{
+            /*if (str.Length == 5) 
+            {*/
                 //метод счета пар для дальнейшей проверки на палиндромность
                 static int shchetpar (string strmetod)
                 {
@@ -39,10 +39,10 @@ namespace HelloWorld
                 }
                             
             //вторя часть проверки на 5тизначность
-            //else
+            /*else
             //{
                 //Console.WriteLine("попробуй еще раз ввести пятизначное число");
-            //}
+            }*/
         }   
     }
 }
