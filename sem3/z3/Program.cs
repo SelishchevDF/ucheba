@@ -11,7 +11,18 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             // Тут писать
-            
+            Console.WriteLine("дайте N");
+            int N = Convert.ToInt32(Console.ReadLine());
+            // считаем кубы
+            static void Kub(int a)
+            {
+                for (int i = 1; i <=a; i++)
+                {
+                    double kubik = Math.Pow(i,3);
+                    Console.WriteLine($"куб {i} = " + kubik);
+                }
+            }
+            Kub(N);
         }
     }
 }
