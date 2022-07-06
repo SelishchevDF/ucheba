@@ -1,10 +1,20 @@
-﻿namespace GeekBrains
+﻿/*
+Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+
+452 -> 11
+
+82 -> 10
+
+9012 -> 12
+*/
+namespace GeekBrains
 {
     class Program
     {
         static void Main(string[] args)
         {
             // Тут писать главное
+        C
             
         }
     // тут методы
