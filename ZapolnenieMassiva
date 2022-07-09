@@ -1,0 +1,21 @@
+// Обьявление длины массива и элементов
+
+            int MinArrayLength = 5;
+            int MaxArrayLength = 10; 
+            int MinElement = 100;
+            int MaxElement = 1000;
+
+// Заполнение массива
+            
+            int [] Arrey = IntArray(MinArrayLength, MaxArrayLength, MinElement, MaxElement);
+
+// Метод заполнения
+            int [] IntArray(int a, int b, int c, int d) 
+            {
+            int [] array = new int[new Random().Next(a,b)];
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = new Random().Next(c,d);
+            }
+            return array; 
+            }

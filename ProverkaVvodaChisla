@@ -1,0 +1,25 @@
+//для решения в общем виде проверки ввода числа num на выходе можно юзать
+            
+            bool result = int.TryParse(A,out int num);
+            while ((result == false)) 
+            {
+                Console.WriteLine("Число вводи");
+                A = Console.ReadLine();
+                result = int.TryParse(A,out num);   
+            }
+
+//// Проверка выбора конкретного числа num на выходе можно юзать
+
+            bool result = int.TryParse(A,out int num);
+            bool result123 = num == 1 | num == 2 | num == 3;
+            bool obchsh = result & result123 ; 
+            
+            while ( obchsh == false ) 
+            {
+                Console.WriteLine("Число вводи от 1 до 3");
+                A = Console.ReadLine();
+                result = int.TryParse(A,out num);
+                result123 = num == 1 | num == 2 | num == 3;
+                obchsh = result & result123;
+                   
+            }
