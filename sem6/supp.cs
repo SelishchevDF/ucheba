@@ -48,6 +48,30 @@ namespace GeekBrains
         public static double[] GetLine()
         {
             double [] A = new double[2];
+
+            /*
+            try
+            {
+
+                Console.WriteLine("y = k * x + b");
+                
+                Console.WriteLine("Введите k");
+                A[0] = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"k - {A[0]}");
+
+                Console.WriteLine("Введите b");
+                A[1] = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"b - {A[1]}");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("так сложно ввести число? будем пробовать пока не получится"); 
+                GetLine();
+                
+            }
+            Console.WriteLine($"k - {A[0]}, b - {A[1]}");
+            */
+
             string? B = "qwerty";
 
             for (int i = 0; i < A.Length; i++)           
@@ -61,7 +85,7 @@ namespace GeekBrains
                 }
                 B = "qwerty";
                 A[i] = num;
-            }            
+            }          
             return A;
         }
         public static void LineCross(double[] A, double[] B)
