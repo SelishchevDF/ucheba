@@ -23,3 +23,22 @@
                 obchsh = result & result123;
                    
             }
+
+/// через ридкей
+
+            ConsoleKeyInfo select;
+            do
+            {
+                Console.WriteLine("1 - первая задача, 2 - вторая задача, Esc - выход ");
+                select = Console.ReadKey();
+                Console.WriteLine();
+                
+                if (select.Key == ConsoleKey.D1)
+                {
+                    Console.WriteLine("Первая задача");
+                }
+                if (select.Key == ConsoleKey.D2)
+                {
+                    Console.WriteLine("Вторая задача");
+                }
+            }   while (select.Key != ConsoleKey.Escape);
