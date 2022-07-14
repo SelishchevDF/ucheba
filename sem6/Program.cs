@@ -22,7 +22,7 @@ namespace GeekBrains
                 Console.WriteLine("Вторая задача");
                 Z2.Z2Main();
             }
-            else
+            if (select.Key != ConsoleKey.D1 && select.Key != ConsoleKey.D2)
             {
                 Console.WriteLine("еще разок");
             }                       

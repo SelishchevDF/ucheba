@@ -48,40 +48,39 @@ namespace GeekBrains
         public static double[] GetLine()
         {
             double [] A = new double[2];
-            try
+            string? B = "qwerty";
+
+            for (int i = 0; i < A.Length; i++)           
             {
-                
-                Console.WriteLine("y = k * x + b");
-                Console.WriteLine("Введите k");
-                A[0] = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("Введите b");
-                A[1] = Convert.ToDouble(Console.ReadLine());
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("так сложно ввести число? будем пробовать пока не получится"); 
-                GetLine();
-            }
+                bool result = double.TryParse(B,out double num);
+                while ((result == false)) 
+                {
+                    Console.WriteLine("Число вводи");
+                    B = Console.ReadLine();
+                    result = double.TryParse(B,out num);
+                }
+                B = "qwerty";
+                A[i] = num;
+            }            
             return A;
         }
         public static void LineCross(double[] A, double[] B)
         {   
             if (A[0] == B[0] && A[1] == B[1])
-                    Console.WriteLine("прямые совпадают");
+                Console.WriteLine("прямые совпадают");
             else
             {
                 if (A[0] == B[0])
                     Console.WriteLine("прямые параллельны");
                 else 
                 {
-                double[] C = new double[2];
-                C[0] = (A[1] - B[1]) / (B[0] - A[0]); 
-                C[1] = (B[0] * A[1] - A[0] * B[1]) / (B[0] - A[0]);
-                Console.WriteLine($"Точка пересечения прямых х={C[0]} ,у={C[1]}");
+                    double[] C = new double[2];
+                    C[0] = (A[1] - B[1]) / (B[0] - A[0]); 
+                    C[1] = (B[0] * A[1] - A[0] * B[1]) / (B[0] - A[0]);
+                    Console.WriteLine($"Точка пересечения прямых х={C[0]} ,у={C[1]}");
                 }
             }    
         }
-
     }
 
 
