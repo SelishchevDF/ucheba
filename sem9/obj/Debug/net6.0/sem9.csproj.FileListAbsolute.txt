@@ -1,0 +1,15 @@
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\obj\Debug\net6.0\sem9.csproj.AssemblyReference.cache
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\obj\Debug\net6.0\sem9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\obj\Debug\net6.0\sem9.AssemblyInfoInputs.cache
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\obj\Debug\net6.0\sem9.AssemblyInfo.cs
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\obj\Debug\net6.0\sem9.csproj.CoreCompileInputs.cache
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\bin\Debug\net6.0\sem9.exe
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\bin\Debug\net6.0\sem9.deps.json
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\bin\Debug\net6.0\sem9.runtimeconfig.json
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\bin\Debug\net6.0\sem9.dll
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\bin\Debug\net6.0\sem9.pdb
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\obj\Debug\net6.0\sem9.dll
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\obj\Debug\net6.0\refint\sem9.dll
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\obj\Debug\net6.0\sem9.pdb
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\obj\Debug\net6.0\sem9.genruntimeconfig.cache
+C:\Users\Толстунчик\Desktop\u2\ucheba\sem9\obj\Debug\net6.0\ref\sem9.dll
