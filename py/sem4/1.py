@@ -4,12 +4,12 @@
 
 import random
 
-num = random.randint(10,51)
+num = random.randint(29,29)
 
 def find_multipliers(x:int):
     """функция, которая составит список простых множителей числа N."""
     multipliers_list = []
-    for i in range(2,10):
+    for i in range(2,x+1): # +1 для чисел типа 3 7 29 и тд, которые только сами на себя делятся
         if x % i == 0:
             count = 0 # для проверки простоты множителя
             for j in range(2,i): 
