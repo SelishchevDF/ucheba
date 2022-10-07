@@ -10,11 +10,11 @@ def ischislo(s):
     """проверка преобразования в число"""
     try:
         float(s)
-        return True
+        return True, float(s)
     except ValueError:
         try:
             complex(s)
-            return True
+            return True, complex(s)
         except ValueError:
             return False
 

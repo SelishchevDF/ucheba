@@ -132,7 +132,8 @@ def calc(update, context):
 def num1d(update, context):
     global num1
     num1 = update.message.text
-    if check.ischislo(num1):
+    if check.ischislo(num1)[0]:
+        num1 = check.ischislo(num1)[1]
         apk_log("первое число от пользователя", num1)
         context.bot.send_message(update.effective_chat.id, 'Введи 2е число(комплексное в формате 10+11j)')
         return NUM2
@@ -140,7 +141,8 @@ def num1d(update, context):
 def num2d(update, context):
     global num2
     num2 = update.message.text
-    if check.ischislo(num2):
+    if check.ischislo(num2)[0]:
+        num2 = check.ischislo(num2)[1]
         apk_log("второе число от пользователя", num2)
         context.bot.send_message(update.effective_chat.id, 'выбери знак + - * /')
         return ZNAK
@@ -151,19 +153,19 @@ def znak(update, context):
     znak1 = update.message.text
     apk_log("знак от пользователя", znak1)
     if znak1 == "+":
-        otvet = int(num1) + int(num2)
+        otvet = num1 + num2
         context.bot.send_message(update.effective_chat.id, f'результат{num1} {znak1} {num2} = {otvet}')
         return ConversationHandler.END
     elif znak1 == "-":
-        otvet = int(num1) - int(num2)
+        otvet = num1 - num2
         context.bot.send_message(update.effective_chat.id, f'результат{num1} {znak1} {num2} = {otvet}')
         return ConversationHandler.END
     if znak1 == "*":
-        otvet = int(num1) * int(num2)
+        otvet = num1 * num2
         context.bot.send_message(update.effective_chat.id, f'результат{num1} {znak1} {num2} = {otvet}')
         return ConversationHandler.END
     if znak1 == "/":
-        otvet = int(num1) / int(num2)
+        otvet = num1 / num2
         context.bot.send_message(update.effective_chat.id, f'результат{num1} {znak1} {num2} = {otvet}')
         return ConversationHandler.END
 
