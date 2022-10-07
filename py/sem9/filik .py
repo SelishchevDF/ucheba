@@ -129,7 +129,7 @@ def calc(update, context):
     context.bot.send_message(update.effective_chat.id, 'Введи 1е число(комплексное в формате 10+11j)')
     return NUM1
 
-def num1(update, context):
+def num1d(update, context):
     global num1
     num1 = update.message.text
     if check.ischislo(num1):
@@ -137,7 +137,7 @@ def num1(update, context):
         context.bot.send_message(update.effective_chat.id, 'Введи 2е число(комплексное в формате 10+11j)')
         return NUM2
 
-def num2(update, context):
+def num2d(update, context):
     global num2
     num2 = update.message.text
     if check.ischislo(num2):
@@ -190,8 +190,8 @@ conv_handler = ConversationHandler( # здесь строится логика �
         DRAW: [MessageHandler(Filters.text, draw)],
         USER_TERN: [MessageHandler(Filters.text, user_tern)],
         BOT_TERN: [MessageHandler(Filters.text, bot_tern)],
-        NUM1: [MessageHandler(Filters.text, num1)],
-        NUM2: [MessageHandler(Filters.text, num2)],
+        NUM1: [MessageHandler(Filters.text, num1d)],
+        NUM2: [MessageHandler(Filters.text, num2d)],
         ZNAK: [MessageHandler(Filters.text, znak)],
         CALC: [MessageHandler(Filters.text, calc)],
     },
