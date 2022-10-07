@@ -132,16 +132,18 @@ def calc(update, context):
 def num1(update, context):
     global num1
     num1 = update.message.text
-    apk_log("первое число от пользователя", num1)
-    context.bot.send_message(update.effective_chat.id, 'Введи 2е число(комплексное в формате 10+11j)')
-    return NUM2
+    if check.ischislo(num1):
+        apk_log("первое число от пользователя", num1)
+        context.bot.send_message(update.effective_chat.id, 'Введи 2е число(комплексное в формате 10+11j)')
+        return NUM2
 
 def num2(update, context):
     global num2
     num2 = update.message.text
-    apk_log("второе число от пользователя", num2)
-    context.bot.send_message(update.effective_chat.id, 'выбери знак + - * /')
-    return ZNAK
+    if check.ischislo(num2):
+        apk_log("второе число от пользователя", num2)
+        context.bot.send_message(update.effective_chat.id, 'выбери знак + - * /')
+        return ZNAK
 
 def znak(update, context):
     global num2
@@ -150,14 +152,20 @@ def znak(update, context):
     apk_log("знак от пользователя", znak1)
     if znak1 == "+":
         otvet = int(num1) + int(num2)
+        context.bot.send_message(update.effective_chat.id, f'результат{num1} {znak1} {num2} = {otvet}')
+        return ConversationHandler.END
     elif znak1 == "-":
         otvet = int(num1) - int(num2)
+        context.bot.send_message(update.effective_chat.id, f'результат{num1} {znak1} {num2} = {otvet}')
+        return ConversationHandler.END
     if znak1 == "*":
         otvet = int(num1) * int(num2)
+        context.bot.send_message(update.effective_chat.id, f'результат{num1} {znak1} {num2} = {otvet}')
+        return ConversationHandler.END
     if znak1 == "/":
         otvet = int(num1) / int(num2)
-    context.bot.send_message(update.effective_chat.id, f'результат{num1} {znak1} {num2} = {otvet}')
-    return ConversationHandler.END
+        context.bot.send_message(update.effective_chat.id, f'результат{num1} {znak1} {num2} = {otvet}')
+        return ConversationHandler.END
 
 def cancel(update, _):
     # определяем пользователя
