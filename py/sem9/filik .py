@@ -1,6 +1,4 @@
 
-from ast import Num
-import numbers
 from telegram import Update, Bot
 from telegram.ext import Updater, CommandHandler, Filters, MessageHandler, ConversationHandler
 from config import TOKEN
@@ -89,20 +87,21 @@ def draw(update, context):
         bot = user
         print('первый ботяра')
         context.bot.send_message(update.effective_chat.id, (f'первый ходит {first_player}, второй ходит {bot}'))
+        context.bot.send_message(update.effective_chat.id, ('для хода бота ченить напиши'))
         return BOT_TERN
 
 def user_tern(update, context):
     global num
     global num_at_tern
     global user
-    context.bot.send_message(update.effective_chat.id, (f'конфет осталось {num}, сколько взять?'))
+    context.bot.send_message(update.effective_chat.id, ('для хода бота ченить напиши'))
     print(f'ходжит игрок конфет осталось {num}')
     num_temp = update.message.text
     if (check.isint(num_temp) and 0 < int(num_temp) <= int(num_at_tern)) :
         apk_log('пользователь взял', f'{num_temp} конфет')
         num = int(num) - int(num_temp)
         print(f'ходил игрок конфет {num}')
-        if (int(num) - int(num_temp)) > 0:
+        if int(num) > 0:
             return BOT_TERN
         else:
             context.bot.send_message(update.effective_chat.id, (f'победил  ~{user}'))
@@ -120,6 +119,7 @@ def bot_tern(update, context):
     num = int(num) - bot_take
     print(f'ходил бот конфет {num}')
     if (int(num)) > 0:
+        context.bot.send_message(update.effective_chat.id, (f'конфет осталось {num}, сколько взять?'))
         return USER_TERN
     else:
         context.bot.send_message(update.effective_chat.id, (f'победил  ~БОТЯРА'))
