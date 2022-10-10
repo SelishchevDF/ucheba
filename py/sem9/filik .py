@@ -1,4 +1,3 @@
-
 from telegram import Update, Bot
 from telegram.ext import Updater, CommandHandler, Filters, MessageHandler, ConversationHandler
 from config import TOKEN
@@ -207,7 +206,3 @@ dispatcher.add_handler(conv_handler)
 print('server started')
 updater.start_polling()
 updater.idle()
-
-
-
-
