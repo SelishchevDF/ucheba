@@ -28,9 +28,9 @@ public class ParseAndSort {
 
     private static String isNumber(String str){
         try {
-            int num = Integer.parseInt(str);
-            if (num < 0) num = -num;
-            return str;
+            Integer num = Integer.parseInt(str);
+            if (num < 0) num = -num ;
+            return Integer.toString(num);
         } catch (Exception e) {
             return "e";
         }
@@ -76,7 +76,7 @@ public class ParseAndSort {
                         }
                         else sortedList.set(3, string); //дата рождения 4й параметр
                     }
-                    else sortedList.set(4, string); //номер телефона 5 параметр
+                    else sortedList.set(4, isNumber(string)); //номер телефона 5 параметр
                 }
                 else sortedList.set(5, string);//пол 6й параметр
             }
