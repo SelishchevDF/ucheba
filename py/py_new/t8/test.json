@@ -1,0 +1,81 @@
+{
+ "name": ".",
+ "type": "dir",
+ "parent": ".",
+ "size": 4096
+}{
+ "name": "t1.py",
+ "type": "file",
+ "parent": ".",
+ "size": 2223
+}{
+ "name": "test.csv",
+ "type": "file",
+ "parent": ".",
+ "size": 409
+}{
+ "name": "test.json",
+ "type": "file",
+ "parent": ".",
+ "size": 1230
+}{
+ "name": "__init__.py",
+ "type": "file",
+ "parent": ".",
+ "size": 40
+}{
+ "name": "t8_1",
+ "type": "dir",
+ "parent": ".\\t8_1",
+ "size": 0
+}{
+ "name": "t8_1_test.txt",
+ "type": "file",
+ "parent": ".\\t8_1",
+ "size": 0
+}{
+ "name": "t8_1_1",
+ "type": "dir",
+ "parent": ".\\t8_1\\t8_1_1",
+ "size": 0
+}{
+ "name": "t8_1_1_test.txt",
+ "type": "file",
+ "parent": ".\\t8_1\\t8_1_1",
+ "size": 30
+}{
+ "name": "t8_1_1_test2.txt",
+ "type": "file",
+ "parent": ".\\t8_1\\t8_1_1",
+ "size": 5
+}{
+ "name": "t8_1_2",
+ "type": "dir",
+ "parent": ".\\t8_1\\t8_1_2",
+ "size": 0
+}{
+ "name": "t8_1_2_TEST.txt",
+ "type": "file",
+ "parent": ".\\t8_1\\t8_1_2",
+ "size": 0
+}{
+ "name": "t8_2",
+ "type": "dir",
+ "parent": ".\\t8_2",
+ "size": 0
+}{
+ "name": "t8_3",
+ "type": "dir",
+ "parent": ".\\t8_3",
+ "size": 0
+}{
+ "name": "t8_3_1",
+ "type": "dir",
+ "parent": ".\\t8_3\\t8_3_1",
+ "size": 0
+}{
+ "name": "t8_3_1test.txt",
+ "type": "file",
+ "parent": ".\\t8_3\\t8_3_1",
+ "size": 0
+}
