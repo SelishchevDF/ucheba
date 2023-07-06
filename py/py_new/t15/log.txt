@@ -1,0 +1,24 @@
+start at 10:54:48 with param 5
+break at 10:54:48 with exception unsupported operand type(s) for //: 'str' and 'int'
+start at 10:57:56 with param dima
+break at 10:57:56 with exception invalid literal for int() with base 10: 'dima'
+start at 10:59:27 with param 5
+stop at 10:59:27 with result True
+
+start at 11:0:33 with param 6
+stop at 11:0:33 with result False
+
+start at 11:0:39 with param 7
+stop at 11:0:39 with result True
+
+start at 11:0:43 with param 7.15
+break at 11:0:43 with exception invalid literal for int() with base 10: '7.15'
+
+start at 11:0:48 with param dima
+break at 11:0:48 with exception invalid literal for int() with base 10: 'dima'
+
+start at 11:1:13 with param 10000
+break at 11:1:13 with exception значение пользователя 10000 не подходит условиям
+
+start at 11:2:3 with param 10000
+break at 11:2:3 with exception Р·РЅР°С‡РµРЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ 10000 РЅРµ РїРѕРґС…РѕРґРёС‚ СѓСЃР»РѕРІРёСЏРј
