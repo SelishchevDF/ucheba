@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header>
+      <div class="hdr">МАГАЗИН ВЕЩЕЙ</div>  
+    </header>
+    <nav>
+        <a href="http://127.0.0.1:5000/index/">Главная</a>
+        <a href="http://127.0.0.1:5000/categories/">Категории товаров</a>
+    </nav>
+    <section>
+        {% block content %}
+            Страница не заполнена
+        {% endblock %}
+    </section>
+    <footer>
+        <div class="ftr">КОНТАКТЫ</div>
+    </footer>
+</body>
+</html>

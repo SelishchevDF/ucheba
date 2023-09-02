@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <div class="cnt">
+        {% for item in context %}
+            <div class=product_ctn>
+                <img class=prd_pic src={{ item.picture }} alt={{ item.name }}>
+                <p class=product_name>{{ item.name }}</p>
+                <a href={{ item.link }}>Посмотреть</a> 
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
