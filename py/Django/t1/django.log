@@ -1,0 +1,60 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 5
+C:\Users\Selishchev\Desktop\Django\t1\t1\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Selishchev\Desktop\Django\t1\t1app\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Selishchev\Desktop\Django\t1\t1app\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Selishchev\Desktop\Django\t1\t1app\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Selishchev\Desktop\Django\t1\t1app\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Selishchev\Desktop\Django\t1\t1app\views.py changed, reloading.
+Watching for file changes with StatReloader
+посещение страницы index в: 2023-09-27 13:58:13.388602
+"GET / HTTP/1.1" 200 648
+Not Found: /style.css
+"GET /style.css HTTP/1.1" 404 2428
+посещение страницы index в: 2023-09-27 13:58:15.981379
+"GET / HTTP/1.1" 200 648
+Not Found: /style.css
+"GET /style.css HTTP/1.1" 404 2428
+посещение страницы about в: 2023-09-27 13:58:17.072436
+"GET /about/ HTTP/1.1" 200 860
+Not Found: /about/style.css
+"GET /about/style.css HTTP/1.1" 404 2446
+посещение страницы index в: 2023-09-27 13:58:18.793254
+"GET / HTTP/1.1" 200 648
+Not Found: /style.css
+"GET /style.css HTTP/1.1" 404 2428
+посещение страницы about в: 2023-09-27 13:58:19.852474
+"GET /about/ HTTP/1.1" 200 860
+Not Found: /about/style.css
+"GET /about/style.css HTTP/1.1" 404 2446
+посещение страницы index в: 2023-09-27 13:58:21.649588
+"GET / HTTP/1.1" 200 648
+Not Found: /style.css
+"GET /style.css HTTP/1.1" 404 2428
+посещение страницы about в: 2023-09-27 13:58:22.277666
+"GET /about/ HTTP/1.1" 200 860
+Not Found: /about/style.css
+"GET /about/style.css HTTP/1.1" 404 2446
+C:\Users\Selishchev\Desktop\Django\t1\t1\settings.py changed, reloading.
+Watching for file changes with StatReloader
+РїРѕСЃРµС‰РµРЅРёРµ СЃС‚СЂР°РЅРёС†С‹ index РІ: 2023-09-27 14:01:57.794575
+"GET / HTTP/1.1" 200 648
+Not Found: /style.css
+"GET /style.css HTTP/1.1" 404 2428
+РїРѕСЃРµС‰РµРЅРёРµ СЃС‚СЂР°РЅРёС†С‹ about РІ: 2023-09-27 14:02:00.007106
+"GET /about/ HTTP/1.1" 200 860
+Not Found: /about/style.css
+"GET /about/style.css HTTP/1.1" 404 2446
+РїРѕСЃРµС‰РµРЅРёРµ СЃС‚СЂР°РЅРёС†С‹ index РІ: 2023-09-27 14:02:00.510101
+"GET / HTTP/1.1" 200 648
+Not Found: /style.css
+"GET /style.css HTTP/1.1" 404 2428
+РїРѕСЃРµС‰РµРЅРёРµ СЃС‚СЂР°РЅРёС†С‹ about РІ: 2023-09-27 14:02:00.879465
+"GET /about/ HTTP/1.1" 200 860
+Not Found: /about/style.css
+"GET /about/style.css HTTP/1.1" 404 2446
