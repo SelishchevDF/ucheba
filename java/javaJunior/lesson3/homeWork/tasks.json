@@ -1,0 +1,25 @@
+[ {
+  "name" : "John",
+  "age" : 19,
+  "gpa" : 4.6
+}, {
+  "name" : "Rembo",
+  "age" : 20,
+  "gpa" : 4.5
+}, {
+  "name" : "Sylvester",
+  "age" : 21,
+  "gpa" : 4.4
+}, {
+  "name" : "Stallone",
+  "age" : 22,
+  "gpa" : 4.3
+}, {
+  "name" : "BIN",
+  "age" : 19,
+  "gpa" : 4.6
+}, {
+  "name" : "Json",
+  "age" : 19,
+  "gpa" : 4.6
+} ]
