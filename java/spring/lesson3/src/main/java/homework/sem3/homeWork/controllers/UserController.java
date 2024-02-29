@@ -29,7 +29,7 @@ public class UserController {
 
     //localhost:8080/users/param?name=qwer&age=30&email=zxcv
     @PostMapping("/param")
-    public void userAddFromBody(@RequestParam("name") String name, @RequestParam("age") int age, @RequestParam("email") String email)
+    public void userAddFromParam(@RequestParam("name") String name, @RequestParam("age") int age, @RequestParam("email") String email)
     {
         service.processRegistration(name, age, email);
     }
