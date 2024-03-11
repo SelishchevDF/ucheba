@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<h1>Tasks</h1>
+<h2>View tasks</h2>
+
+<table>
+    <tr>
+        <th>id</th>
+        <th>task_description</th>
+        <th>task_status</th>
+        <th>task_date_of_creation</th>
+    </tr>
+    <tr th:each="t: ${myTasks}" >
+        <td th:text="${t.id}"></td>
+        <td th:text="${t.taskDescription}"></td>
+        <td th:text="${t.myTaskStatus}"></td>
+        <td th:text="${t.taskDateOfCreation}"></td>
+    </tr>
+</table>
+
+<h2>Add a task</h2>
+<form action="/t5" method="post">
+    taskDescription: <input type="text" name="taskDescription"><br />
+    myTaskStatus: <select name="myTaskStatus">
+                        <option selected value="NOT_STARTED">NOT_STARTED</option>
+                        <option value="IN_PROGRESS">IN_PROGRESS</option>
+                        <option value="COMPLETED">COMPLETED</option>
+                    </select><br />
+    <button type="submit">Add task</button>
+</form>
+</body>
+</html>
