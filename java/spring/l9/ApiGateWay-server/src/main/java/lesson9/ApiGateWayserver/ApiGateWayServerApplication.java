@@ -18,6 +18,8 @@ public class ApiGateWayServerApplication {
 	@Bean
 	public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
 		return builder.routes()
+				.route("myApp",r->r.path("/tasks/**")
+						.uri("http://localhost:8082/"))
 				.route("myApp",r->r.path("/myapp/**")
 						.uri("http://localhost:8082/")).build();}
 }
