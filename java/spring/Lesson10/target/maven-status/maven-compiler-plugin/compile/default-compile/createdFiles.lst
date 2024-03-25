@@ -1,0 +1,7 @@
+Lesson6\Lesson6\aspect\TrackUserActionAspect.class
+Lesson6\Lesson6\aspect\TrackUserAction.class
+Lesson6\Lesson6\services\MyTaskService.class
+Lesson6\Lesson6\models\MyTask.class
+Lesson6\Lesson6\repositories\MyTasksRepository.class
+Lesson6\Lesson6\controllers\RESTMyTaskController.class
+Lesson6\Lesson6\Lesson6Application.class
