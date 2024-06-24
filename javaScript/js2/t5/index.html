@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxForData__dataEL {
+            padding: 20px;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Задание 1
+    1. Поиск в интернете (бесплатные api примеры).
+    2. Найти любые данные, на произвольную тему.
+    3. Создать файл data.js.
+    4. Создать переменную которая будет хранить данные из публичных api.
+    
+    Задание 2
+    1. Создать файл index.html.
+    2. Подключить data.js.
+    3. Сформировать контент из данных (картинка загловок и параграф).
+    4. Добавить данный контент в вёрстку.
+    5. * Добавить стили при необходимости (по желанию). -->
+
+    <div class="boxForData"></div>
+
+
+
+
+    <script src="data.js"></script>
+
+    <script>
+        let dataFromJson = JSON.parse(data);
+
+        let boxForDataEl = document.querySelector('.boxForData');
+
+        dataFromJson.forEach(element => {
+            let boxForData__dataEL = document.createElement('div');
+            boxForData__dataEL.classList.add("boxForData__dataEL");
+
+            let boxForData__imgEl = document.createElement('img');
+            boxForData__imgEl.classList.add("boxForData__img");
+            if (element.img) {
+                boxForData__imgEl.src = "true.png";
+                boxForData__imgEl.alt = "ЕСТЬ КАРТИНКА!!!";
+            }
+            else {
+                boxForData__imgEl.src = "somePic.png";
+                boxForData__imgEl.alt = "somePic";
+            }
+            boxForData__dataEL.appendChild(boxForData__imgEl);
+
+            boxForData__dataEL.insertAdjacentHTML("beforeend", `
+            <div class="boxForData__cnt">
+                <div class="boxForData__age">"age: ${element.age}"</div>
+                <div class="boxForData__name">"name ${element.name}"</div>
+                <div class="boxForData__gender">"gender: ${element.gender}"</div>
+            </div>
+            `);
+
+            boxForDataEl.appendChild(boxForData__dataEL);
+        });
+
+    </script>
+</body>
+
+</html>
