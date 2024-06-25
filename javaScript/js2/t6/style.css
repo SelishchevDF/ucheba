@@ -1,0 +1,23 @@
+.productsBox {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.productBox {
+    Width: 360px;
+    Height: 581px;
+}
+
+.productImg {
+    Width: 360px;
+    Height: 420px;
+}
+
+.prdTexts {}
+
+.prdTitle {}
+
+.prdDescription {}
+
+.prdPrise {}

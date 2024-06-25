@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="productsBox"></div>
+
+    <script src="data.js"></script>
+
+    <script>
+        let productsBoxEl = document.querySelector('.productsBox');
+
+        let productsData = JSON.parse(prdsJSON);
+        console.log(productsData);
+
+        productsData.forEach(element => {
+            let prdBoxEl = document.createElement('div');
+            prdBoxEl.classList.add('productBox');
+
+            let prdImageEl = document.createElement('img');
+            prdImageEl.classList.add('productImg');
+            prdImageEl.src = element.image.src;
+            prdImageEl.alt = element.image.alt;
+            prdBoxEl.appendChild(prdImageEl);
+
+            let prdTextsEl = document.createElement('div');
+            prdTextsEl.classList.add('prdTexts');
+            prdTextsEl.appendChild(new function () {
+                let prdTitleEl = document.createElement('div');
+                prdTitleEl.classList.add('prdTitle');
+                prdTitleEl.textContent = element.title;
+                return prdTitleEl;
+            });
+            prdTextsEl.appendChild(new function () {
+                let prdDescriptionEl = document.createElement('div');
+                prdDescriptionEl.classList.add('prdDescription');
+                prdDescriptionEl.textContent = element.description;
+                return prdDescriptionEl;
+            });
+            prdTextsEl.appendChild(new function () {
+                let prdPriseEl = document.createElement('div');
+                prdPriseEl.classList.add('prdPrise');
+                prdPriseEl.textContent = element.price;
+                return prdPriseEl;
+            });
+
+            prdBoxEl.appendChild(prdTextsEl);
+
+            productsBoxEl.appendChild(prdBoxEl);
+        });
+
+    </script>
+
+</body>
+
+</html>
