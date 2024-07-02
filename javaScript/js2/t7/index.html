@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Урок 13. Семинар. Работа с медиа
+Дан макет сайта https://www.figma.com/file/mnLY69cYE5cqWM5w6n5hXx/Seo-%26-Digital-Marketing-Landing-Page?node-id=4203%3A2&t=q4NMnXTnwyyTSGA6-0
+
+На предыдущем уроке вы сформировали данные из раздела "Товары".
+
+При клике на кнопку add to cart у товара под блоком с акциями появляется раздел Cart items.
+
+В разделе Cart items появляются товары, добавленные в корзину,
+
+При клике на крестик, товар удаляется из из раздела корзины, если удалить все товары, раздел полностью пропадает. -->
+
+    <div class="productsBox"></div>
+
+    <div class="cartItems">CartItems</div>
+
+    <script src="data.js"></script>
+
+    <script>
+        let productsBoxEl = document.querySelector('.productsBox');
+
+        let productsData = JSON.parse(prdsJSON);
+
+        productsData.forEach(element => {
+            let prdBoxEl = document.createElement('div');
+            prdBoxEl.classList.add('productBox');
+
+            let prdImageEl = document.createElement('img');
+            prdImageEl.classList.add('productImg');
+            prdImageEl.src = element.image.src;
+            prdImageEl.alt = element.image.alt;
+            prdBoxEl.appendChild(prdImageEl);
+
+            let prdTextsEl = document.createElement('div');
+            prdTextsEl.classList.add('prdTexts');
+            prdTextsEl.appendChild(new function () {
+                let prdTitleEl = document.createElement('div');
+                prdTitleEl.classList.add('prdTitle');
+                prdTitleEl.textContent = element.title;
+                return prdTitleEl;
+            });
+            prdTextsEl.appendChild(new function () {
+                let prdDescriptionEl = document.createElement('div');
+                prdDescriptionEl.classList.add('prdDescription');
+                prdDescriptionEl.textContent = element.description;
+                return prdDescriptionEl;
+            });
+            prdTextsEl.appendChild(new function () {
+                let prdPriseEl = document.createElement('div');
+                prdPriseEl.classList.add('prdPrise');
+                prdPriseEl.textContent = element.price;
+                return prdPriseEl;
+            });
+            prdBoxEl.appendChild(prdTextsEl);
+
+            let addToCartButton = document.createElement('button');
+            addToCartButton.classList.add('addToCartButton');
+            addToCartButton.textContent = 'ADD TO CART';
+            prdBoxEl.appendChild(addToCartButton);
+
+
+            productsBoxEl.appendChild(prdBoxEl);
+        });
+
+    </script>
+
+    <script>
+        function elementVisible(e) {
+            (e.children.length < 1) ? e.style.display = 'none' : e.style.display = 'block';
+        }
+
+        let cartItemsEl = document.querySelector('.cartItems');
+        elementVisible(cartItemsEl);
+
+        let addToCartButtonsList = document.querySelectorAll('.addToCartButton');
+        addToCartButtonsList.forEach(btn => btn.addEventListener('click', function clicked(e) {
+            let addedToCartPrdBoxEl = e.target.parentNode.cloneNode(true);
+            let clonedBtn = addedToCartPrdBoxEl.querySelector('.addToCartButton')
+            let btn = e.target;
+            clonedBtn.textContent = 'REMOVE FROM CART';
+            clonedBtn.classList.remove('addToCartButton');
+            clonedBtn.classList.add('removeToCartButton');
+            btn.style.display = 'none';
+            cartItemsEl.appendChild(addedToCartPrdBoxEl);
+            elementVisible(cartItemsEl);
+            clonedBtn.addEventListener('click', function (e) {
+                addedToCartPrdBoxEl.remove();
+                elementVisible(cartItemsEl);
+                btn.style.display = 'block';
+            });
+
+        }));
+
+    </script>
+
+</body>
+
+</html>
