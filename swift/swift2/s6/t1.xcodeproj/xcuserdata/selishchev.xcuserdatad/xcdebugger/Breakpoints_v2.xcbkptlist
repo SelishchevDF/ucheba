@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5F98297E-1ECF-4A63-962B-D803BEDF49E2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "090690C8-B077-4352-BEBF-DC0D2E67D324"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "t1/FileCache.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "277AE845-9279-461D-A53D-5E283001D75A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "t1/Controllers/GroupsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "277AE845-9279-461D-A53D-5E283001D75A - e27b997fd53c3704"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "t1.GroupsViewController.__allocating_init(style: __C.UITableViewStyle) -&gt; t1.GroupsViewController"
+                  moduleName = "t1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elena/Desktop/AppSwiftHomeworks/Seminar6_VK/t1/Controllers/GroupsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "277AE845-9279-461D-A53D-5E283001D75A - a885f4d8eb67d858"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "t1.GroupsViewController.init(style: __C.UITableViewStyle) -&gt; t1.GroupsViewController"
+                  moduleName = "t1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elena/Desktop/AppSwiftHomeworks/Seminar6_VK/t1/Controllers/GroupsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "277AE845-9279-461D-A53D-5E283001D75A - c3344ed75697e58c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "t1.GroupsViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; t1.GroupsViewController"
+                  moduleName = "t1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elena/Desktop/AppSwiftHomeworks/Seminar6_VK/t1/Controllers/GroupsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "277AE845-9279-461D-A53D-5E283001D75A - 286aca56ee9a122"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "t1.GroupsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; t1.GroupsViewController"
+                  moduleName = "t1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elena/Desktop/AppSwiftHomeworks/Seminar6_VK/t1/Controllers/GroupsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "145">
+               </Location>
+               <Location
+                  uuid = "277AE845-9279-461D-A53D-5E283001D75A - ad2293808101aa82"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "t1.GroupsViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;t1.GroupsViewController&gt;"
+                  moduleName = "t1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elena/Desktop/AppSwiftHomeworks/Seminar6_VK/t1/Controllers/GroupsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "277AE845-9279-461D-A53D-5E283001D75A - c65894b91d87a164"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "t1.GroupsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;t1.GroupsViewController&gt;"
+                  moduleName = "t1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elena/Desktop/AppSwiftHomeworks/Seminar6_VK/t1/Controllers/GroupsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "102">
+               </Location>
+               <Location
+                  uuid = "277AE845-9279-461D-A53D-5E283001D75A - 20ddc025d62b6934"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "t1.GroupsViewController.__deallocating_deinit"
+                  moduleName = "t1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elena/Desktop/AppSwiftHomeworks/Seminar6_VK/t1/Controllers/GroupsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60C7B149-1EF1-4D7A-B622-CE8F245DFE6F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "t1/DateHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "getDateString(date:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
